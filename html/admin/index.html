@@ -29,7 +29,7 @@
     <div class="layout-container">
       <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
         <div class="app-brand demo justify-content-center">
-          <a href="#" class="app-brand-link">
+          <a href="./index.html" class="app-brand-link">
             <div class="logo-img" style="background-image: url('../../assets/images/black-logo.png');"></div>
           </a>
           <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -83,34 +83,51 @@
         </ul>
       </aside>
       <div class="layout-page">
+        <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar">
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <div class="navbar-nav flex-row align-items-center ms-auto">  
+              <div class="d-flex gap-3 align-items-center">
+                <div class="profile_img" style="background-image: url('../../assets/images/avatar.png');"></div>
+                <div>
+                  <h6 class="mb-0">Vivin Paul</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
         <div class="content-wrapper">
           <div class="container-xxl flex-grow-1 container-p-y">
             <div class="row">
               <div class="col-12 mb-4">
                 <div class="card">
-                  <div class="d-flex align-items-end row">
+                  <div class="align-items-center row">
                     <div class="col-sm-7">
                       <div class="card-body">
-                        <h5 class="card-title text-primary">Congratulations Admin! 🎉</h5>
-                        <p class="mb-4">
+                        <h5 class="mb-3 card-title text-primary">Congratulations Admin! 🎉</h5>
+                        <p class="mb-0">
                           You have done <span class="fw-bold">35</span> more books bought the out college library. We
                           are hope our library book very helpful for out college students.</p>
                       </div>
                     </div>
                     <div class="col-sm-5 text-center text-sm-left">
-                      <div class="card-body pb-0 px-0 px-md-4">
-                        <img src="../../assets/images/index-img.png" height="140" alt="View Badge User"
-                          data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                          data-app-light-img="illustrations/man-with-laptop-light.png" />
+                      <div class="card-body p-0">
+                        <div class="library_badge_img" style="background-image: url('../../assets/images/index-img.png');"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-12">
-                <div class="row">
-                  <div class="col-lg-3 col-md-6 col-6 mb-4">
-                    <div class="card">
+                <div class="row g-3">
+                  <div class="col-lg-3 col-md-6 col-6">
+                    <div class="card h-100">
                       <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                           <div
@@ -123,8 +140,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-6 mb-4">
-                    <div class="card">
+                  <div class="col-lg-3 col-md-6 col-6">
+                    <div class="card h-100">
                       <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                           <div
@@ -137,8 +154,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-6 mb-4">
-                    <div class="card">
+                  <div class="col-lg-3 col-md-6 col-6">
+                    <div class="card h-100">
                       <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                           <div
@@ -151,8 +168,8 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-3 col-md-6 col-6 mb-4">
-                    <div class="card">
+                  <div class="col-lg-3 col-md-6 col-6">
+                    <div class="card h-100">
                       <div class="card-body">
                         <div class="card-title d-flex align-items-start justify-content-between">
                           <div
@@ -168,11 +185,11 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="mt-4">
               <h4 class="fw-bold mb-4">Recent Buyers List</h4>
               <div class="card p-4">
                 <div class="table-responsive">
-                  <table id="zero_config" class="p-0 table table-striped
+                  <table class="zero_config p-0 table table-striped
                         table-bordered">
                     <thead>
                       <tr>
@@ -245,8 +262,103 @@
                         <td>San Francisco</td>
                         <td>17/01/09</td>
                         <td>17/01/09</td>
-                        <td><span></span> Expiring soon</td>
+                        <td><span></span> Expiring Soon</td>
                         <td>-</td>
+                        <td>
+                          <div class="d-flex gap-1">
+                            <a href="#" class="box-hover">
+                              <div>
+                                <i class="bx bx-edit-alt"></i>
+                              </div>
+                            </a>
+                            <a href="#" class="box-hover">
+                              <div>
+                                <i class="bx bx-trash"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4">
+              <h4 class="fw-bold mb-4">Recent Book List</h4>
+              <div class="card p-4">
+                <div class="table-responsive">
+                  <table class="zero_config table table-striped
+                        table-bordered">
+                    <thead>
+                      <tr>
+                        <th>S. No</th>
+                        <th>Book Name</th>
+                        <th>Author Name</th>
+                        <th>Department</th>
+                        <th>Subject</th>
+                        <th>Book count</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>01</td>
+                        <td>
+                          <a href="./book-detail.html" class="a-hover">System Architect</a>
+                        </td>
+                        <td>Edinburgh</td>
+                        <td>ECE</td>
+                        <td>Science</td>
+                        <td>6</td>
+                        <td>
+                          <div class="d-flex gap-1">
+                            <a href="#" class="box-hover">
+                              <div>
+                                <i class="bx bx-edit-alt"></i>
+                              </div>
+                            </a>
+                            <a href="#" class="box-hover">
+                              <div>
+                                <i class="bx bx-trash"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>02</td>
+                        <td>
+                          <a href="./book-detail.html" class="a-hover">Accountant</a>
+                        </td>
+                        <td>Tokyo</td>
+                        <td>CCE</td>
+                        <td>physics</td>
+                        <td>4</td>
+                        <td>
+                          <div class="d-flex gap-1">
+                            <a href="#" class="box-hover">
+                              <div>
+                                <i class="bx bx-edit-alt"></i>
+                              </div>
+                            </a>
+                            <a href="#" class="box-hover">
+                              <div>
+                                <i class="bx bx-trash"></i>
+                              </div>
+                            </a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>03</td>
+                        <td>
+                          <a href="./book-detail.html" class="a-hover">Junior Technical</a>
+                        </td>
+                        <td>San Francisco</td>
+                        <td>CSE</td>
+                        <td>maths</td>
+                        <td>5</td>
                         <td>
                           <div class="d-flex gap-1">
                             <a href="#" class="box-hover">
@@ -287,7 +399,7 @@
     /****************************************
      *       Basic Table                   *
      ****************************************/
-    $('#zero_config').DataTable();
+    $('.zero_config').DataTable();
   </script>
 </body>
 

@@ -29,7 +29,7 @@
     <div class="layout-container">
       <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
         <div class="app-brand demo justify-content-center">
-          <a href="#" class="app-brand-link">
+          <a href="./index.html" class="app-brand-link">
             <div class="logo-img" style="background-image: url('../../assets/images/black-logo.png');"></div>
           </a>
           <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -83,9 +83,33 @@
         </ul>
       </aside>
       <div class="layout-page">
+        <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar">
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <div class="navbar-nav flex-row align-items-center ms-auto">  
+              <div class="d-flex gap-3 align-items-center">
+                <div class="profile_img" style="background-image: url('../../assets/images/avatar.png');"></div>
+                <div>
+                  <h6 class="mb-0">Vivin Paul</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
         <div class="content-wrapper">
           <div class="container-xxl flex-grow-1 container-p-y">
-            <h4 class="fw-bold mb-4">Buyer Profile</h4>
+            <a href="./book-list.html" class="text-dark">
+              <div class="d-flex align-items-center gap-1 mb-4">
+                <div><i class="bx bx-chevron-left fs-1 fw-light"></i></div>
+                <h4 class="fw-bold mb-0">Buyer Profile</h4>
+              </div>
+            </a>
             <div class="nav-align-top mb-4">
               <ul class="nav nav-tabs nav-fill" role="tablist">
                 <li class="nav-item">
@@ -107,7 +131,7 @@
                   <div class="card-body pt-0 px-0">
                     <div class="d-flex align-items-start align-items-sm-center
                         gap-4">
-                      <img src="../../assets/images/avatar.png" alt="user-avatar" class="d-block rounded" height="100"
+                      <img src="../../assets/images/avatar.png" alt="user-avatar" class="d-none d-lg-block d-md-block rounded" height="100"
                         width="100" id="uploadedAvatar" />
                       <div class="button-wrapper">
                         <h3 class=" mb-0">Name: Vivin Paul</h3>
@@ -147,7 +171,7 @@
                 </div>
                 <div class="tab-pane fade" id="navs-justified-profile" role="tabpanel">
                   <div class="table-responsive">
-                    <table id="zero_config" class="p-0 table table-striped
+                    <table class="zero_config p-0 table table-striped
                           table-bordered">
                       <thead>
                         <tr>
@@ -210,7 +234,7 @@
                           <td><a href="./book-detail.html" class="a-hover">San Francisco</a></td>
                           <td>17/01/09</td>
                           <td>17/01/09</td>
-                          <td><span></span> Expiring soon</td>
+                          <td><span></span> Expiring Soon</td>
                           <td>-</td>
                           <td>
                             <div class="d-flex gap-1">
@@ -251,7 +275,7 @@
   <script src="../../assets/datatable/jquery/dist/jquery.min.js"></script>
   <script src="../../assets/datatable/DataTables-lib/datatables.min.js"></script>
   <script>
-    $('#zero_config').DataTable();
+    $('.zero_config').DataTable();
   </script>
 </body>
 
